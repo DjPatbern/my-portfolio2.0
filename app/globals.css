@@ -18,12 +18,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* width: 100%;
+  height: auto; */
+  background-image: url("../public/images/darkbg.jpg");
+  background-size: cover;
 }
 
 @layer utilities {
