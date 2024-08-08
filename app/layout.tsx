@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/src/theme.context";
 import { NextTopLoader } from "./common/NextTopLoader";
+import { cn } from "@/lib/utils";
+import { geologica } from "@/src/font";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${cn(geologica.className, "font-sans")}`}>
         <ThemeProvider>
           <NextTopLoader />
           {children}

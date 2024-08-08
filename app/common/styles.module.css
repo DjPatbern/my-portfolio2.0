@@ -1,0 +1,7 @@
+.bg-gradient-to-custom-dark {
+  background: linear-gradient(180deg, #040309 0%, #284eb5 100%);
+}
+
+.bg-gradient-to-custom-light {
+  background: linear-gradient(180deg, #d3e2fe 0%, #ffffff 100%);
+}
