@@ -9,7 +9,13 @@ import { cn } from "@/lib/utils";
 import LinkItems from "./LayoutFragments/LinkItems";
 import PhoneHamburger from "./LayoutFragments/PhoneHamburger";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({
+  children,
+  ignoreLinks,
+}: {
+  children: React.ReactNode;
+  ignoreLinks?: boolean;
+}) => {
   const { darkMode, setDarkMode } = useTheme();
   const modeImg = darkMode ? sunIcon : moonIcon;
   const template = darkMode
@@ -31,11 +37,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           >
             <Link href="/">VICTOR PATRICK</Link>
           </div>
-          <div className="hidden md:block">
-            <LinkItems />
-          </div>
+          {!ignoreLinks && (
+            <div className="hidden lg:block">
+              <LinkItems />
+            </div>
+          )}
           <div className="flex gap-1 justify-center items-center">
-            <div className="md:hidden block">
+            <div className="lg:hidden block">
               <PhoneHamburger />
             </div>
             <div

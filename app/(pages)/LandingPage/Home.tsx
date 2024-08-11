@@ -20,13 +20,13 @@ const Home = () => {
 
   return (
     <div className="2xl:max-w-7xl mx-auto w-full">
-      <div className="md:flex w-full mt-10 gap-10 md:justify-between 4xl:py-24 flex-row-reverse">
-        <div className="flex-1 md:mb-0 mb-12 flex justify-center items-center flex-col rounded-md">
+      <div className="lg:flex w-full mt-10 gap-10 lg:justify-between 4xl:py-24 flex-row-reverse">
+        <div className="flex-1 lg:mb-0 mb-12 flex justify-center items-center flex-col rounded-md">
           <ImageSlider />
         </div>
         <div className="flex-1 text-left gap-4 flex flex-col">
           <h1
-            className={`${garamond.className}  md:min-h-32 lg:text-[3.5rem] text-[1.75rem] font-semibold leading-10 lg:leading-[3.625rem] lg:tracking-[-0.07rem]`}
+            className={`${garamond.className}  lg:min-h-32 lg:text-[3.5rem] text-[1.75rem] font-semibold leading-10 lg:leading-[3.625rem] lg:tracking-[-0.07rem]`}
           >
             <TypeAnimation
               sequence={stacks}
@@ -39,7 +39,7 @@ const Home = () => {
           <p>Choose here to download my resume or see my portfolio</p>
           <div className="flex gap-10 mt-4 items-center justify-start">
             <Link
-              href="/portfolio"
+              href="/projects"
               className={`${Portfoliobtn} text-center  zoom-animation  font-bold py-2 px-4 rounded-2xl`}
             >
               Explore My Portfolio
