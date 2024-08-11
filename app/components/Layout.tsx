@@ -6,6 +6,8 @@ import sunIcon from "@/public/svg/sun.svg";
 import { useTheme } from "@/src/theme.context";
 import styles from "../common/styles.module.css";
 import { cn } from "@/lib/utils";
+import LinkItems from "./LayoutFragments/LinkItems";
+import PhoneHamburger from "./LayoutFragments/PhoneHamburger";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { darkMode, setDarkMode } = useTheme();
@@ -21,19 +23,27 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className={`${bgImgClass} md:py-8 min-h-[100vh]`}>
       <div
-        className={`${template} md:p-10 p-4 md:rounded-3xl  md:mx-24 md:min-h-[85vh] min-h-[100vh]`}
+        className={`${template} md:p-10 p-4 md:rounded-3xl  md:mx-24 md:min-h-[85vh] min-h-[100vh] scroll-bar`}
       >
         <div className="flex justify-between">
           <div
-            className={`${logoTemplate} border-2 border-dotted  inline-block px-4 py-2 rounded-xl`}
+            className={`${logoTemplate} border-2  inline-block px-4 py-2 rounded-xl`}
           >
-            <Link href="/">VICTOR</Link>
+            <Link href="/">VICTOR PATRICK</Link>
           </div>
-          <div
-            className="w-10 h-10 rounded-full bg-white border flex justify-center items-center cursor-pointer"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            <Image src={modeImg} alt="mode" />
+          <div className="hidden md:block">
+            <LinkItems />
+          </div>
+          <div className="flex gap-1 justify-center items-center">
+            <div className="md:hidden block">
+              <PhoneHamburger />
+            </div>
+            <div
+              className="w-10 h-10  flex justify-center items-center cursor-pointer"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              <Image src={modeImg} alt="mode" />
+            </div>
           </div>
         </div>
         {children}

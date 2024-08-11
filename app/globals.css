@@ -65,3 +65,35 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* FILTER CUSTOM SCROLL BAR CSS */
+
+.scroll-bar {
+  overflow: hidden;
+  height: calc(100vh - 100px);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  #AD9FF1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7A60D8;
+}
+
+.scroll-bar-x {
+  height: calc(100vh - 100px);
+  overflow: scroll;
+}
+
+
