@@ -15,6 +15,7 @@
     "embla-carousel-react": "^8.1.8",
     "next": "14.2.5",
     "nextjs-toploader": "^1.6.12",
+    "nodemailer": "^6.9.14",
     "nprogress": "^0.2.0",
     "react": "^18",
     "react-dom": "^18",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
     "@types/nprogress": "^0.2.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",

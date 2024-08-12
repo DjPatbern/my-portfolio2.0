@@ -9,7 +9,6 @@ import { useTheme } from "@/src/theme.context";
 
 const Home = () => {
   const { darkMode } = useTheme();
-  // const textColor = darkMode ? "text-ts-faded-light" : "text-ts-faded-dark";
   const Portfoliobtn = darkMode
     ? "text-ts-faded-dark bg-ts-faded-light hover:text-ts-dark hover:bg-ts-light"
     : "hover:text-ts-light hover:bg-ts-dark text-ts-faded-light bg-ts-faded-dark";
