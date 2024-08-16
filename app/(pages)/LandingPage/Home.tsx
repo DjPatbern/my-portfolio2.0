@@ -38,7 +38,7 @@ const Home = () => {
           <p>Choose here to download my resume or see my portfolio</p>
           <div className="flex gap-10 mt-4 items-center justify-start">
             <Link
-              href="/projects"
+              href="/portfolio"
               className={`${Portfoliobtn} text-center  zoom-animation  font-bold py-2 px-4 rounded-2xl`}
             >
               Explore My Portfolio

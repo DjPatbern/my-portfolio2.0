@@ -21,8 +21,12 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const getDefaultTheme = (): boolean => {
-    const selectedTheme = localStorage.getItem("darkMode");
-    return selectedTheme ? JSON.parse(selectedTheme) : false;
+    if (typeof window !== "undefined") {
+      // This check ensures the code only runs in the browser
+      const selectedTheme = localStorage.getItem("darkMode");
+      return selectedTheme ? JSON.parse(selectedTheme) : false;
+    }
+    return false; // Default value for SSR (Server-Side Rendering)
   };
 
   const [darkMode, setDarkMode] = useState<boolean>(getDefaultTheme());
