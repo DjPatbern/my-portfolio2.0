@@ -1,9 +1,11 @@
 import slide1 from "@/public/images/slide1.jpg";
-import slide2 from "@/public/images/slide2.jpg";
+import slide2 from "@/public/images/tp.jpg";
 import slide3 from "@/public/images/slide3.jpg";
 import slide4 from "@/public/images/slide4.jpg";
 import slide5 from "@/public/images/slide5.jpg";
 import slide6 from "@/public/images/slide6.jpg";
+import fuz from "@/public/images/fuz.jpg";
+import fuzdash from "@/public/images/fuzdash.jpg";
 import trendstack from "@/public/images/trendstack.png";
 import altschool from "@/public/images/altschool.png";
 import rocketdevs from "@/public/images/rocketDevs.jpeg";
@@ -41,33 +43,74 @@ import tailwind from "@/public/icons/tailwind.png";
 import ts from "@/public/icons/ts.svg";
 import vercel from "@/public/icons/vercel.svg";
 import vue from "@/public/icons/vue.jpg";
+import rocket from "@/public/images/rocket.jpeg";
+import fuzlogo from "@/public/images/fuzlogo.jpeg";
+import tplogo from "@/public/images/tpdb_logo.jpeg";
 
 export const projects = [
   {
     url: "https://staging.gettrendstack.com/",
     img: slide1,
     title: "Trendstack",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery",
+    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Paystack",
     year: "2023 - Present",
     description:
       "This is an application that connect companies to brand influencers on TikTok, it pays influencers to advertise products and services of funded campaigns from companies",
   },
   {
-    url: "https://theparkdb.vercel.app/",
+    url: "https://www.theparkdb.com/",
     img: slide2,
     title: "The Park DB",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery",
+    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Firebase",
     year: "2024",
-    code: "https://github.com/DjPatbern/tpdb",
     description:
       "This is an application that houses the database of amusment parks around the world, it shows the users the name, location, price, founded year and map direction of these parks",
+  },
+  {
+    url: "https://www.fuziondot.com/",
+    img: fuz,
+    title: "Fuziondot",
+    stacks: "NextJs ▪ TailwindCss ▪ TypeScript",
+    year: "2024",
+    description:
+      "This is an application is the landing page of Fuziondot, a digital marketing platform for digital marketers",
+  },
+  {
+    url: "http://cay-point-app-adea.vercel.app/",
+    img: slide5,
+    title: "Cay Point",
+    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Firebase",
+    year: "2023",
+    code: "https://github.com/DjPatbern/cay-point-app",
+    description:
+      "This is a web application that help users locate hospitals, clinics and gym houses across Nigeria. Accepts google account authentication, search for hospitality firms according to their names, state, city,type and can have access to contact informations of each hospitality firm.",
+  },
+
+  {
+    url: "https://dashboard.fuziondot.com/",
+    img: fuzdash,
+    title: "Fuziondot Dashboard",
+    stacks: "NextJs ▪ TypeScript ▪ ReactQuery ▪ ReCharts ▪ Stripe",
+    year: "2024 - Present",
+    description:
+      "This is an application that houses numerous digital marketing tools around SEO, Traffic Analysis, Competitors Analysis, Ads Management, Market Research etc, it is a go to place for Digital Marketers and online enterprenuers in general.",
+  },
+  {
+    url: "https://crowdfundco.vercel.app/",
+    img: slide6,
+    title: "Vines Computers",
+    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery",
+    year: "2023",
+    code: "https://github.com/DjPatbern/crowdfundco",
+    description:
+      "This is the website of Vines Computers, a computer sales firm in Nigeria. This website contains the contact details and every other vital details potential costumers need from Vine Computers",
   },
   {
     url: "https://clone-a92f6.web.app/",
     img: slide3,
     title: "YouTube Clone",
     stacks: "ReactJS ▪ SCSS ▪ JavaScript ▪ Redux ▪ Youtube API",
-    year: "2023",
+    year: "2022",
     code: "https://github.com/DjPatbern/youtube-clone",
     description:
       "This application is a perfcet replication of Youtube, Users can login with their google account and access real life YouTube with this clone YouTube app of mine",
@@ -82,34 +125,23 @@ export const projects = [
     description:
       "This is a social media application for Techies across the globe, users can login with email and password, make posts including images, read, like and comment on other techie's post etc",
   },
-  {
-    url: "http://cay-point-app-adea.vercel.app/",
-    img: slide5,
-    title: "Cay Point",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Firebase",
-    year: "2023",
-    code: "https://github.com/DjPatbern/cay-point-app",
-    description:
-      "This is a web application that help users locate hospitals, clinics and gym houses across Nigeria. Accepts google account authentication, search for hospitality firms according to their names, state, city,type and can have access to contact informations of each hospitality firm.",
-  },
-  {
-    url: "https://crowdfundco.vercel.app/",
-    img: slide6,
-    title: "Vines Computers",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery",
-    year: "2024",
-    code: "https://github.com/DjPatbern/crowdfundco",
-    description:
-      "This is the website of Vines Computers, a computer sales firm in Nigeria. This website contains the contact details and every other vital details potential costumers need from Vine Computers",
-  },
 ];
 
 export const jobs = [
   {
+    name: "Fuziondot",
+    role: "Frontend Developer",
+    type: "Full Time",
+    year: "2024 - Present",
+    img: fuzlogo,
+    site: "https://www.fuziondot.com/",
+    location: "United Kingdom(Remote)",
+  },
+  {
     name: "Trendstack",
     role: "Frontend Developer",
     type: "Full Time",
-    year: "2023 - Present",
+    year: "2023 - 2024",
     img: trendstack,
     site: "https://gettrendstack.com/",
     location: "Nigeria(Remote)",
@@ -122,6 +154,15 @@ export const jobs = [
     img: rocketdevs,
     site: "https://rocketdevs.com/",
     location: "Egypt(Remote)",
+  },
+  {
+    name: "The Park Database",
+    role: "Frontend Engineer",
+    type: "RocketDevs Client",
+    year: "2024",
+    img: tplogo,
+    site: "https://theparkdb.com/",
+    location: "U.S.A(Remote)",
   },
   {
     name: "Altschool Africa",
@@ -316,6 +357,12 @@ export const certificates = [
     issueSchool: "BYU-Pathway",
   },
   {
+    img: rocket,
+    issueDate: "Sept 2024",
+    name: "Certified Frontend Engineer",
+    issueSchool: "RocketDevs",
+  },
+  {
     img: hackercert,
     issueDate: "December 2022",
     name: "Certified ReactJS Developer",
@@ -324,7 +371,6 @@ export const certificates = [
   },
 ];
 
-
 export const education = [
   {
     img: byuIdaho,
@@ -332,7 +378,7 @@ export const education = [
     school: "BYU-Idaho",
     location: "U.S.A",
     type: "Bachelor's Degree",
-    major: "Software Development"
+    major: "Software Development",
   },
   {
     img: altschool,
@@ -340,7 +386,7 @@ export const education = [
     school: "Altschool Africa",
     location: "Nigeria",
     type: "Diploma",
-    major: "Software Engineering(Front-End)"
+    major: "Software Engineering(Front-End)",
   },
   {
     img: byupathway,
@@ -348,6 +394,6 @@ export const education = [
     school: "BYU-Pathway",
     location: "U.S.A",
     type: "Certificate",
-    major: "Programming With Python"
+    major: "Programming With Python",
   },
 ];

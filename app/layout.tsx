@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "This is a personal portfolio website of Victor Patrick, A frontend developer and frontend engineer",
     siteName: "Victor Patrick",
-    url: "https://theparkdb.vercel.app/",
+    url: "https://victorpatrick.vercel.app/",
     title: "Victor Patrick",
   },
   twitter: {

@@ -19,35 +19,35 @@ const Home = () => {
 
   return (
     <div className="2xl:max-w-7xl mx-auto w-full">
-      <div className="lg:flex w-full mt-10 gap-10 lg:justify-between 4xl:py-24 flex-row-reverse">
+      <div className="lg:flex w-full mt-10 gap-10 lg:justify-between 4xl:py-24 flex-row-reverse items-center">
         <div className="flex-1 lg:mb-0 mb-12 flex justify-center items-center flex-col rounded-md">
           <ImageSlider />
         </div>
         <div className="flex-1 text-left gap-4 flex flex-col">
           <h1
-            className={`${garamond.className}  lg:min-h-32 lg:text-[3.5rem] text-[1.75rem] font-semibold leading-10 lg:leading-[3.625rem] lg:tracking-[-0.07rem]`}
+            className={`${garamond.className}   lg:text-[3.5rem] text-[1.75rem] font-semibold leading-10 lg:leading-[3.625rem] lg:tracking-[-0.07rem]`}
           >
             <TypeAnimation
               sequence={stacks}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "1em", display: "inline-block" }}
+              style={{ fontSize: "40px", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>
-          <p>Choose here to download my resume or see my portfolio</p>
-          <div className="flex gap-10 mt-4 items-center justify-start">
+          <p>Download my resume or see my portfolio below</p>
+          <div className="flex gap-5 mt-4 items-center justify-start">
             <Link
               href="/portfolio"
-              className={`${Portfoliobtn} text-center  zoom-animation  font-bold py-2 px-4 rounded-2xl`}
+              className={`${Portfoliobtn} text-center text-sm    font-bold py-1.5 px-2.5 rounded-lg`}
             >
-              Explore My Portfolio
+              Portfolio
             </Link>
             <Link
-              href="https://od.lk/d/M18zMDc1MDcwMDlf/PatRes02.pdf"
-              className={`${Resumebtn} text-center  zoom-animation border font-bold py-2 px-4 rounded-2xl`}
+              href="https://od.lk/d/M18zMTE3NTUyODBf/PatResume.pdf"
+              className={`${Resumebtn} text-center text-sm   border font-bold py-1.5 px-2.5 rounded-lg`}
             >
-              Download My Resume
+              Resume
             </Link>
           </div>
         </div>

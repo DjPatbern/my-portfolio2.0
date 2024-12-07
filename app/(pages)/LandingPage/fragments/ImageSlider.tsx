@@ -5,9 +5,9 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import slide1 from "@/public/images/slide1.jpg";
-import slide2 from "@/public/images/slide2.jpg";
-import slide3 from "@/public/images/slide3.jpg";
-import slide4 from "@/public/images/slide4.jpg";
+import slide2 from "@/public/images/tp.jpg";
+import slide3 from "@/public/images/fuz.jpg";
+import slide4 from "@/public/images/fuzdash.jpg";
 import slide5 from "@/public/images/slide5.jpg";
 import slide6 from "@/public/images/slide6.jpg";
 import Link from "next/link";
@@ -18,15 +18,15 @@ const slides = [
     img: slide1
   }, 
   {
-    url:"https://theparkdb.vercel.app/",
+    url:"https://theparkdb.com/",
     img: slide2
   },
   {
-    url:"https://clone-a92f6.web.app/",
+    url:"https://www.fuziondot.com/",
     img: slide3
   },
   {
-    url:"https://blog-app-6ea90.web.app/?",
+    url:"https://dashboard.fuziondot.com/",
     img: slide4
   },
   {
@@ -51,9 +51,10 @@ const ImageSlider = () => {
             <Link href={slide.url} target="_blank" className="embla__slide" key={index}>
               <Image
                 src={slide.img}
-                className="rounded-md cursor-pointer h-64"
+                className="rounded-md cursor-pointer h-60"
                 priority
                 alt="slide"
+                // width={}
               />
             </Link>
           ))}
