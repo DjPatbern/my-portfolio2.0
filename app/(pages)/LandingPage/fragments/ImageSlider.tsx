@@ -10,17 +10,23 @@ import slide3 from "@/public/images/fuz.jpg";
 import slide4 from "@/public/images/fuzdash.jpg";
 import slide5 from "@/public/images/slide5.jpg";
 import slide6 from "@/public/images/slide6.jpg";
+import slide7 from "@/public/images/slide7.png";
+import slide8 from "@/public/images/slide8.png";
 import Link from "next/link";
 
 const slides = [
   {
-    url:"https://staging.gettrendstack.com/",
+    url:"https://gettrendstack.com/",
     img: slide1
   }, 
-  {
-    url:"https://theparkdb.com/",
-    img: slide2
-  },
+    {
+    url:"https://clickd.africa/",
+    img: slide7
+  }, 
+    {
+    url:"https://koyi.africa/",
+    img: slide8
+  }, 
   {
     url:"https://www.fuziondot.com/",
     img: slide3
@@ -28,6 +34,10 @@ const slides = [
   {
     url:"https://dashboard.fuziondot.com/",
     img: slide4
+  },
+  {
+    url:"https://theparkdb.com/",
+    img: slide2
   },
   {
     url:"http://cay-point-app-adea.vercel.app/",
