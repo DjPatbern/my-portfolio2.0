@@ -48,7 +48,7 @@ import vue from "@/public/icons/vue.jpg";
 import rocket from "@/public/images/rocket.jpeg";
 import fuzlogo from "@/public/images/fuzlogo.jpeg";
 import tplogo from "@/public/images/tpdb_logo.jpeg";
-import play2win from "@/public/images/play2win.svg";
+import play2win from "@/public/images/playlabs.webp";
 import reactquery from "@/public/images/react-query.webp";
 import shadcn from "@/public/images/shadcn.png";
 import redux from "@/public/images/redux.webp";
