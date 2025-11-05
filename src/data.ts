@@ -158,7 +158,7 @@ export const jobs = [
     type: "Full Time",
     year: "2025 - Present",
     img: play2win,
-    site: "https://www.play2win.com.ng/",
+    site: "https://playlabsltd.com/",
     location: "Nigeria(Remote)",
   },
   {
