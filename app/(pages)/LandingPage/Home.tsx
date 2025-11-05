@@ -44,7 +44,7 @@ const Home = () => {
               Portfolio
             </Link>
             <Link
-              href="https://od.lk/d/M18zMTE3NTUyODBf/PatResume.pdf"
+              href="https://od.lk/d/M18zMjA2Mzg5NDVf/PatResumeDnn.pdf"
               className={`${Resumebtn} text-center text-sm   border font-bold py-1.5 px-2.5 rounded-lg`}
             >
               Resume

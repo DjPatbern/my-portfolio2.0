@@ -7,8 +7,8 @@ const Profile = () => {
     <div className="flex items-center justify-center flex-col lg:flex-row gap-10">
       <Image
         src={victor}
-        height={200}
-        width={200}
+        height={150}
+        width={150}
         className="rounded-full zoom-animation"
         alt="Victor Patrick"
         priority

@@ -4,6 +4,8 @@ import slide3 from "@/public/images/slide3.jpg";
 import slide4 from "@/public/images/slide4.jpg";
 import slide5 from "@/public/images/slide5.jpg";
 import slide6 from "@/public/images/slide6.jpg";
+import slide7 from "@/public/images/slide7.png";
+import slide8 from "@/public/images/slide8.png";
 import fuz from "@/public/images/fuz.jpg";
 import fuzdash from "@/public/images/fuzdash.jpg";
 import trendstack from "@/public/images/trendstack.png";
@@ -46,10 +48,14 @@ import vue from "@/public/icons/vue.jpg";
 import rocket from "@/public/images/rocket.jpeg";
 import fuzlogo from "@/public/images/fuzlogo.jpeg";
 import tplogo from "@/public/images/tpdb_logo.jpeg";
+import play2win from "@/public/images/play2win.svg";
+import reactquery from "@/public/images/react-query.webp";
+import shadcn from "@/public/images/shadcn.png";
+import redux from "@/public/images/redux.webp";
 
 export const projects = [
   {
-    url: "https://staging.gettrendstack.com/",
+    url: "https://gettrendstack.com/",
     img: slide1,
     title: "Trendstack",
     stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Paystack",
@@ -58,23 +64,50 @@ export const projects = [
       "This is an application that connect companies to brand influencers on TikTok, it pays influencers to advertise products and services of funded campaigns from companies",
   },
   {
-    url: "https://www.theparkdb.com/",
-    img: slide2,
-    title: "The Park DB",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Firebase",
-    year: "2024",
-    description:
-      "This is an application that houses the database of amusment parks around the world, it shows the users the name, location, price, founded year and map direction of these parks",
-  },
+  url: "https://clickd.africa/",
+  img: slide7,
+  title: "Click'd",
+  stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ OnionPay ▪ WebSocket",
+  year: "2025",
+  description:
+    "This is a social application that connect two people of like minds. It houses a chat area for users to chat and share ideas & media. It also owns a swipe, match and win game feature.",
+},
   {
-    url: "https://www.fuziondot.com/",
-    img: fuz,
-    title: "Fuziondot",
-    stacks: "NextJs ▪ TailwindCss ▪ TypeScript",
-    year: "2024",
-    description:
-      "This is an application is the landing page of Fuziondot, a digital marketing platform for digital marketers",
-  },
+  url: "https://koyi.africa/",
+  img: slide8,
+  title: "Koyi",
+  stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ OnionPay ▪ WebSocket",
+  year: "2025",
+  description:
+    "This is a Tech LMS, Hiring and Trivia platform all together. Students take courses, get certified, get hired by prospective clients on the platform via the its escrow system & also play tech trivia quiz to win cash & courses ",
+},
+{
+  url: "https://www.fuziondot.com/",
+  img: fuz,
+  title: "Fuziondot",
+  stacks: "NextJs ▪ TailwindCss ▪ TypeScript",
+  year: "2024",
+  description:
+  "This is the landing page of Fuziondot, a digital marketing platform for digital marketers",
+},
+{
+  url: "https://dashboard.fuziondot.com/",
+  img: fuzdash,
+  title: "Fuziondot Dashboard",
+  stacks: "NextJs ▪ TypeScript ▪ ReactQuery ▪ ReCharts ▪ Stripe",
+  year: "2024 - Present",
+  description:
+    "This is an application that houses numerous digital marketing tools around SEO, Traffic Analysis, Competitors Analysis, Ads Management, Market Research etc, it is a go to place for Digital Marketers and online enterprenuers in general.",
+},
+{
+  url: "https://www.theparkdb.com/",
+  img: slide2,
+  title: "The Park DB",
+  stacks: "NextJs ▪ TailwindCss ▪ TypeScript ▪ ReactQuery ▪ Firebase",
+  year: "2024",
+  description:
+    "This is an application that houses the database of amusment parks around the world, it shows the users the name, location, price, founded year and map direction of these parks",
+},
   {
     url: "http://cay-point-app-adea.vercel.app/",
     img: slide5,
@@ -83,18 +116,9 @@ export const projects = [
     year: "2023",
     code: "https://github.com/DjPatbern/cay-point-app",
     description:
-      "This is a web application that help users locate hospitals, clinics and gym houses across Nigeria. Accepts google account authentication, search for hospitality firms according to their names, state, city,type and can have access to contact informations of each hospitality firm.",
+      "This is application help users locate hospitals, clinics and gym across Nigeria. Accepts google authentication, search for hospitality firms by name, state, city, type and houses access to contact informations of each hospitality firm.",
   },
 
-  {
-    url: "https://dashboard.fuziondot.com/",
-    img: fuzdash,
-    title: "Fuziondot Dashboard",
-    stacks: "NextJs ▪ TypeScript ▪ ReactQuery ▪ ReCharts ▪ Stripe",
-    year: "2024 - Present",
-    description:
-      "This is an application that houses numerous digital marketing tools around SEO, Traffic Analysis, Competitors Analysis, Ads Management, Market Research etc, it is a go to place for Digital Marketers and online enterprenuers in general.",
-  },
   {
     url: "https://crowdfundco.vercel.app/",
     img: slide6,
@@ -128,11 +152,20 @@ export const projects = [
 ];
 
 export const jobs = [
+   {
+    name: "P.E Gaming Limited",
+    role: "Frontend Engineer",
+    type: "Full Time",
+    year: "2025 - Present",
+    img: play2win,
+    site: "https://www.play2win.com.ng/",
+    location: "Nigeria(Remote)",
+  },
   {
     name: "Fuziondot",
     role: "Frontend Developer",
     type: "Full Time",
-    year: "2024 - Present",
+    year: "2024 - 2025",
     img: fuzlogo,
     site: "https://www.fuziondot.com/",
     location: "United Kingdom(Remote)",
@@ -291,6 +324,18 @@ export const skills = [
   {
     img: sass,
     name: "Sass/SCSS",
+  },
+   {
+    img: redux,
+    name: "Redux",
+  },
+   {
+    img: reactquery,
+    name: "React Query",
+  },
+   {
+    img: shadcn,
+    name: "Shadcn Ui",
   },
   {
     img: node,

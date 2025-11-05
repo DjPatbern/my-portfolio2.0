@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: any) => {
             href={project.url}
             target="_blank"
           >
-            Demo
+            Visit
           </Link>
           {project.code && (
             <Link
