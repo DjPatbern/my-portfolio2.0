@@ -141,7 +141,14 @@ export default function Page() {
         </div>
         <div className="portraitWrap">
           <div className="portraitFrame">
-            <Image src={portrait} alt="Victor Patrick, frontend engineer" priority fill sizes="(max-width: 800px) 90vw, 40vw" />
+            <Image
+              src={portrait}
+              alt="Victor Patrick, frontend engineer"
+              priority
+              fill
+              quality={100}
+              sizes="(max-width: 800px) calc(100vw - 28px), 460px"
+            />
           </div>
           <div className="portraitNote"><span>Currently</span><strong>Building useful things<br/>for the web.</strong></div>
         </div>
