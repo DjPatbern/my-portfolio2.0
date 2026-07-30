@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/src/theme.context";
-import { NextTopLoader } from "./common/NextTopLoader";
 import { cn } from "@/lib/utils";
 import { geologica } from "@/src/font";
 
@@ -13,15 +11,12 @@ export const metadata: Metadata = {
       "en-US": "/en-US",
     },
   },
-  title: {
-    default: "Victor Patrick",
-    template: "%s - Victor Patrick",
-  },
+  title: "Victor Patrick — Frontend Engineer",
   description:
-    "This is a personal portfolio website of Victor Patrick, A frontend developer and frontend engineer",
+    "Frontend engineer building clear, scalable digital products with React, Next.js and TypeScript.",
   openGraph: {
     description:
-      "This is a personal portfolio website of Victor Patrick, A frontend developer and frontend engineer",
+      "Frontend engineer building clear, scalable digital products with React, Next.js and TypeScript.",
     siteName: "Victor Patrick",
     url: "https://victorpatrick.vercel.app/",
     title: "Victor Patrick",
@@ -39,10 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cn(geologica.className, "font-sans")}`}>
-        <ThemeProvider>
-          <NextTopLoader />
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

@@ -32,7 +32,7 @@ const slides = [
     img: slide3
   },
   {
-    url:"https://dashboard.fuziondot.com/",
+    url:"https://www.fuziondot.com/",
     img: slide4
   },
   {
