@@ -224,10 +224,16 @@ export default function Page() {
         <div className="shell">
           <p className="eyebrow">Have a complex product problem?</p>
           <h2>Let’s make it <em>clear.</em></h2>
-          <Link href="mailto:victorbernardpatrick@gmail.com" className="footerMail">victorbernardpatrick@gmail.com ↗</Link>
+          <div className="footerContact">
+            <Link href="mailto:victorbernardpatrick@gmail.com" className="footerMail">victorbernardpatrick@gmail.com ↗</Link>
+            <div className="footerSocial">
+              <Link href="https://github.com/DjPatbern" target="_blank">GitHub</Link>
+              <Link href="https://www.linkedin.com/in/victor-patrick-740458229/" target="_blank">LinkedIn</Link>
+            </div>
+          </div>
           <div className="footerBottom">
             <span>© {new Date().getFullYear()} Victor Patrick</span>
-            <div><Link href="https://github.com/DjPatbern" target="_blank">GitHub</Link><Link href="https://www.linkedin.com/in/victor-patrick-740458229/" target="_blank">LinkedIn</Link><Link href="#top">Back to top ↑</Link></div>
+            <div><Link href="#top">Back to top ↑</Link></div>
           </div>
         </div>
       </footer>
