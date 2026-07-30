@@ -141,7 +141,14 @@ export default function Page() {
         </div>
         <div className="portraitWrap">
           <div className="portraitFrame">
-            <Image src={portrait} alt="Victor Patrick, frontend engineer" priority fill sizes="(max-width: 800px) 90vw, 40vw" />
+            <Image
+              src={portrait}
+              alt="Victor Patrick, frontend engineer"
+              priority
+              fill
+              quality={100}
+              sizes="(max-width: 800px) calc(100vw - 28px), 460px"
+            />
           </div>
           <div className="portraitNote"><span>Currently</span><strong>Building useful things<br/>for the web.</strong></div>
         </div>
@@ -177,7 +184,15 @@ export default function Page() {
           <div className="shipGrid">
             {shipped.map((item) => (
               <Link href={item.href} target="_blank" className="shipCard" key={item.name}>
-                <div className="shipImage"><Image src={item.image} alt="" fill sizes="25vw" /></div>
+                <div className="shipImage">
+                  <Image
+                    src={item.image}
+                    alt=""
+                    fill
+                    quality={95}
+                    sizes="(max-width: 460px) calc(100vw - 28px), (max-width: 800px) calc(50vw - 20px), (max-width: 1288px) calc(20vw - 20px), 240px"
+                  />
+                </div>
                 <div><span>{item.label}</span><h3>{item.name}</h3></div><b>↗</b>
               </Link>
             ))}
